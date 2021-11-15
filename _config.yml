@@ -21,7 +21,7 @@ footer-links:
   email: jielosc@gmail.com
   # facebook:
   # flickr:
-  github: jie47/jie47.github.io
+  github: jielosc
   # 3instagram:
   # linkedin:
   # pinterest:
@@ -53,7 +53,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: /:title/BLog
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
