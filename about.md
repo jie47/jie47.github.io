@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+一名来自河北的 OIer.
 
-### More Information
+[我的洛谷](www.luogu.com.cn/user/455674)
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### 联系我
 
-[email@domain.com](mailto:email@domain.com)
+[E-mail: jielosc@gmail.com](mailto:jielosc@gmail.com)
