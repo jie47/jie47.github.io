@@ -11,4 +11,4 @@ permalink: /about/
 
 ### 联系我
 
-[E-mail: jielosc@gmail.com](mailto:jielosc@gmail.com)
+[E-mail: jielosc@outlook.com](mailto:jielosc@outlook.com)
