@@ -47,7 +47,7 @@
   
   <body style="">
 
-    <audio autoplay="autoplay" loop="loop" src="http://music.163.com/song/media/outer/url?id=1909414208.mp3"  controls="controls" preload="auto"></audio>
+    <audio id="music1" autoplay="autoplay" loop="loop" src="http://music.163.com/song/media/outer/url?id=1909414208.mp3"  controls="controls" preload="auto"></audio>
     <!-- 樱花 -->
     <div id="jsi-cherry-container" class="container">
       
@@ -69,6 +69,21 @@
           size: 30, // particle size in pixels
         },
       };
+
+      
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("music1");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+
 
       /*
        * RequestAnimationFrame polyfill by Erik M?ller
