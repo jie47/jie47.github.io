@@ -1,0 +1,393 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Source Code: https://github.com/Delivator/WebGL-Fluid-Simulation\nCredit: https://github.com/PavelDoGreat/WebGL-Fluid-Simulation\n\n[h1] If the wallpaper is not working, try resetting the wallpaper engine system settings! [/h1]\nNo idea why but my wallpaper suddenly stopped working and resetting the Wallpaper Engine settings fixed it for me.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"audio_responsive" : 
+			{
+				"order" : 117,
+				"text" : "Audio Responsive",
+				"type" : "bool",
+				"value" : true
+			},
+			"background_color" : 
+			{
+				"order" : 106,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"background_image" : 
+			{
+				"condition" : "use_background_image.value",
+				"fileType" : "image",
+				"order" : 103,
+				"text" : "Background Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"background_image_size" : 
+			{
+				"condition" : "use_background_image.value",
+				"options" : 
+				[
+					{
+						"label" : "Contain",
+						"value" : "contain"
+					},
+					{
+						"label" : "Cover",
+						"value" : "Cover"
+					}
+				],
+				"order" : 105,
+				"text" : "Background Image Size",
+				"type" : "combo",
+				"value" : "contain"
+			},
+			"bloom_intensity" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0.10000000000000001,
+				"order" : 131,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Bloom Intensity",
+				"type" : "slider",
+				"value" : 0.80000000000000004
+			},
+			"bloom_threshold" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 132,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Bloom Threshold",
+				"type" : "slider",
+				"value" : 0.59999999999999998
+			},
+			"colorful" : 
+			{
+				"order" : 110,
+				"text" : "Random Color",
+				"type" : "bool",
+				"value" : true
+			},
+			"density_diffusion" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0.90000000000000002,
+				"order" : 123,
+				"precision" : 3,
+				"step" : 0.001,
+				"text" : "Density Diffusion",
+				"type" : "slider",
+				"value" : 0.96999999999999997
+			},
+			"dye_resolution" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "32",
+						"value" : "32"
+					},
+					{
+						"label" : "64",
+						"value" : "64"
+					},
+					{
+						"label" : "128",
+						"value" : "128"
+					},
+					{
+						"label" : "256",
+						"value" : "256"
+					},
+					{
+						"label" : "512",
+						"value" : "512"
+					},
+					{
+						"label" : "1024",
+						"value" : "1024"
+					},
+					{
+						"label" : "2048",
+						"value" : "2048"
+					},
+					{
+						"label" : "4096",
+						"value" : "4096"
+					}
+				],
+				"order" : 122,
+				"text" : "Dye Resolution",
+				"type" : "combo",
+				"value" : "512"
+			},
+			"enable_bloom" : 
+			{
+				"order" : 130,
+				"text" : "Enable Bloom",
+				"type" : "bool",
+				"value" : true
+			},
+			"frequency_range" : 
+			{
+				"condition" : "audio_responsive.value",
+				"fraction" : false,
+				"max" : 62,
+				"min" : 1,
+				"order" : 119,
+				"text" : "Frequency Range",
+				"type" : "slider",
+				"value" : 8
+			},
+			"frequency_range_start" : 
+			{
+				"condition" : "audio_responsive.value",
+				"fraction" : false,
+				"max" : 62,
+				"min" : 0,
+				"order" : 120,
+				"text" : "Frequency Range Start",
+				"type" : "slider",
+				"value" : 0
+			},
+			"idle_random_splats" : 
+			{
+				"order" : 107,
+				"text" : "Idle Random Splats",
+				"type" : "bool",
+				"value" : false
+			},
+			"more_colors" : 
+			{
+				"condition" : "!colorful.value",
+				"order" : 112,
+				"text" : "More Colors",
+				"type" : "bool",
+				"value" : false
+			},
+			"paused" : 
+			{
+				"order" : 129,
+				"text" : "Paused",
+				"type" : "bool",
+				"value" : false
+			},
+			"pressure_diffusion" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 125,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Pressure Diffusion",
+				"type" : "slider",
+				"value" : 0.80000000000000004
+			},
+			"random_splat_amount" : 
+			{
+				"condition" : "idle_random_splats.value",
+				"fraction" : true,
+				"max" : 100,
+				"min" : 1,
+				"order" : 109,
+				"precision" : 2,
+				"step" : 1,
+				"text" : "Random Splat Amount",
+				"type" : "slider",
+				"value" : 10
+			},
+			"random_splat_interval" : 
+			{
+				"condition" : "idle_random_splats.value",
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Random Splat Interval",
+				"type" : "slider",
+				"value" : 1
+			},
+			"repeat_background" : 
+			{
+				"condition" : "use_background_image.value",
+				"order" : 104,
+				"text" : "Repeat Background",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"shading" : 
+			{
+				"order" : 128,
+				"text" : "Shading",
+				"type" : "bool",
+				"value" : true
+			},
+			"show_mouse_movement" : 
+			{
+				"order" : 100,
+				"text" : "Show Mouse Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"simulation_resolution" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "32",
+						"value" : "32"
+					},
+					{
+						"label" : "64",
+						"value" : "64"
+					},
+					{
+						"label" : "128",
+						"value" : "128"
+					},
+					{
+						"label" : "256",
+						"value" : "256"
+					}
+				],
+				"order" : 121,
+				"text" : "Simulation Resolution",
+				"type" : "combo",
+				"value" : "256"
+			},
+			"sound_sensitivity" : 
+			{
+				"condition" : "audio_responsive.value",
+				"fraction" : true,
+				"max" : 10,
+				"min" : 0,
+				"order" : 118,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "Sound Sensitivity",
+				"type" : "slider",
+				"value" : 5
+			},
+			"splat_color" : 
+			{
+				"condition" : "!colorful.value",
+				"order" : 111,
+				"text" : "Splat Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"splat_color_2" : 
+			{
+				"condition" : "more_colors.value && !colorful.value",
+				"order" : 113,
+				"text" : "Splat Color 2",
+				"type" : "color",
+				"value" : "0 1 1"
+			},
+			"splat_color_3" : 
+			{
+				"condition" : "more_colors.value && !colorful.value",
+				"order" : 114,
+				"text" : "Splat Color 3",
+				"type" : "color",
+				"value" : "0 0 1"
+			},
+			"splat_color_4" : 
+			{
+				"condition" : "more_colors.value && !colorful.value",
+				"order" : 115,
+				"text" : "Splat Color 4",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"splat_color_5" : 
+			{
+				"condition" : "more_colors.value && !colorful.value",
+				"order" : 116,
+				"text" : "Splat Color 5",
+				"type" : "color",
+				"value" : "0.9411764705882353 1 0"
+			},
+			"splat_on_click" : 
+			{
+				"order" : 101,
+				"text" : "Splat on click",
+				"type" : "bool",
+				"value" : true
+			},
+			"splat_radius" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0.01,
+				"order" : 127,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Splat Radius",
+				"type" : "slider",
+				"value" : 0.29999999999999999
+			},
+			"use_background_image" : 
+			{
+				"order" : 102,
+				"text" : "Use Background Image",
+				"type" : "bool",
+				"value" : false
+			},
+			"velocity_diffusion" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0.90000000000000002,
+				"order" : 124,
+				"precision" : 3,
+				"step" : 0.001,
+				"text" : "Velocity Diffusion",
+				"type" : "slider",
+				"value" : 0.97999999999999998
+			},
+			"vorticity" : 
+			{
+				"fraction" : false,
+				"max" : 50,
+				"min" : 0,
+				"order" : 126,
+				"text" : "Vorticity",
+				"type" : "slider",
+				"value" : 30
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Abstract" ],
+	"title" : "Colorful Fluid Animation [Audio Responsive]",
+	"type" : "web",
+	"version" : 3,
+	"visibility" : "public",
+	"workshopid" : "1748506393",
+	"workshopurl" : "steam://url/CommunityFilePage/1748506393"
+}
