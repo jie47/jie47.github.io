@@ -1,0 +1,10 @@
+---
+layout:post
+title:网易歌曲下载&外链
+---
+
+## 网易歌曲外链
+
+首先在music.163.com上找到目标歌曲的id
+
+然后 music.163.com/song/media/outer/url?id=*.mp3  即可应用为外链
