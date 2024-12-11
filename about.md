@@ -41,7 +41,7 @@ ENTP
 
 ### 如何联系我？
 
-微信/QQ：879234555
+[Telegram](https://t.me/L073xy)
 
-[E-mail: outlook](mailto:jielosc@outlook.com)
+[E-mail](mailto:jielosc@outlook.com)
 
